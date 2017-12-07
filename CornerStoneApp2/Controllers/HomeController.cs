@@ -12,7 +12,7 @@ namespace CornerStoneApp2.Controllers
         public ActionResult Index()
         {
             var x = new ApplicationContext();
-            var advocates = x.Advocates.Where(y => true);
+           // var advocates = x.Advocates.Where(y => true);
                
             return View(new Advocate());
         }

@@ -1,10 +1,5 @@
 ﻿@model CornerStoneApp2.Models.Advocate
-    ViewBag.Title = "Home Page";
+    @{ViewBag.Title = "Home Page";
 }
 
-@using (Html.BeginForm("Index", "Advocate"))
-{
-    @Html.HiddenFor(m => m.MyId)
-    @Html.TextBoxFor(m => m.Tasks, new { @class = "form-control" })
-    
-}
+<h2>CornerStone Special Education Advocacy</h2>

@@ -27,6 +27,10 @@ namespace CornerStoneApp2.Controllers
             return View();
         }
 
+        public ActionResult ViewDetails()
+        {
+            return View();
+        }
         // POST: AdvocateRegister/Create
         [HttpPost]
         public ActionResult Create(Advocate advocate)
