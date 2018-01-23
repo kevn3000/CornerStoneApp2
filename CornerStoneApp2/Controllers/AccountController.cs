@@ -10,6 +10,8 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using CornerStoneApp2.Models;
 
+
+//test//
 namespace CornerStoneApp2.Controllers
 {
     [Authorize]
