@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\aspnet-CornerStoneApp2-20171206053204.mdf;Initial Catalog=aspnet-CornerStoneApp2-20171206053204;Integrated Security=True" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\k20\\onedrive\\documents\\visual\ studio\ 2017\\Projects\\CornerStoneApp2\\CornerStoneApp2\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
-  </parameter>
-  <parameter name="Advocate-Web.config Connection String" description="Advocate Connection String used in web.config by the application to access the database." defaultValue="data source=(LocalDb)\MSSQLLocalDB;initial catalog=CornerStoneApp2.Models.Advocate;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\k20\\onedrive\\documents\\visual\ studio\ 2017\\Projects\\CornerStoneApp2\\CornerStoneApp2\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Advocate']/@connectionString" />
-  </parameter>
-</parameters>
