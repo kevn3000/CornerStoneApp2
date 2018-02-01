@@ -1,0 +1,98 @@
+﻿@model CornerStoneApp2.Models.Child
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Child</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AdvoID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdvoID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProjectID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProjectID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MidName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MidName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        
+       
+        <dd>
+            <table class="table">
+                <tr>
+                    <th>First Name</th>
+                    <th>Middle Name</th>
+                    <th>Last Name</th>
+                    <th>ID</th>
+                    <th>Address</th>
+                </tr>
+                @foreach (var item in Model.Parents)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FirstName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MidName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LastName)
+                    </td>
+                    <td>@Html.DisplayFor(modelItem => item.ParentID)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Address)</td>
+
+                </tr>
+        }
+            </table>
+        </dd>
+        </dt>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ChildID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

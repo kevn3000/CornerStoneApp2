@@ -1,0 +1,84 @@
+﻿@model CornerStoneApp2.Models.Parent
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Parent</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MidName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MidName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Children)
+        </dt>
+        <dd>
+            <table class="table">
+                <tr>
+                    <th>Child ID</th>
+                    <th>Child First Name</th>
+                    <th>Child Middle Name</th>
+                    <th>Child Last Name</th>
+                    <th>Advocate ID</th>
+                </tr>
+                @foreach (var item in Model.Children)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ChildID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FirstName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MidName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LastName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AdvoID)
+                    </td>
+                </tr>
+        }
+            </table>
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ParentID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

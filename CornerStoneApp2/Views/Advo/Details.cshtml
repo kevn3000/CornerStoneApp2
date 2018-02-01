@@ -1,0 +1,56 @@
+﻿@model CornerStoneApp2.Models.Advo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Advo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Projects)
+        </dt>
+        <dd>
+            <table class="table">
+                <tr>
+                    <th>Advocate ID</th>
+                    <th>Child ID</th>
+                </tr>
+                @foreach (var item in Model.Projects)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AdvoID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ChildID)
+                    </td>
+                </tr>
+        }
+            </table>
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AdvoID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
