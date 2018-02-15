@@ -205,18 +205,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201712062329590_InitialCreate.cs" />
-    <Compile Include="Migrations\201712062329590_InitialCreate.Designer.cs">
-      <DependentUpon>201712062329590_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712070009140_AddPhoneNumber.cs" />
-    <Compile Include="Migrations\201712070009140_AddPhoneNumber.Designer.cs">
-      <DependentUpon>201712070009140_AddPhoneNumber.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201802152141397_InitialCreate1.cs" />
-    <Compile Include="Migrations\201802152141397_InitialCreate1.Designer.cs">
-      <DependentUpon>201802152141397_InitialCreate1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Advo.cs" />
@@ -336,17 +324,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201712062329590_InitialCreate.resx">
-      <DependentUpon>201712062329590_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712070009140_AddPhoneNumber.resx">
-      <DependentUpon>201712070009140_AddPhoneNumber.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201802152141397_InitialCreate1.resx">
-      <DependentUpon>201802152141397_InitialCreate1.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -5,7 +5,7 @@ using System.Web;
 using System.Data.Entity;
 using CornerStoneApp2.Models;
 
-namespace CornerStoneApp2.DAL
+/*namespace CornerStoneApp2.DAL
 {
     public class CornerstoneInitializer : System.Data.Entity.DropCreateDatabaseIfModelChanges<CornerstoneContext>
     {
@@ -57,4 +57,4 @@ namespace CornerStoneApp2.DAL
 
         }
     }
-}
+}*/
