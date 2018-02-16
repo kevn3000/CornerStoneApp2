@@ -87,7 +87,7 @@ namespace CornerStoneApp2.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "AdvoID,FirstName,LastName")] Advo advo)
+        public ActionResult Edit(Advo advo)
         {
             if (ModelState.IsValid)
             {
