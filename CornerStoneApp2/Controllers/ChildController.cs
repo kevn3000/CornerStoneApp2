@@ -47,7 +47,7 @@ namespace CornerStoneApp2.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "AdvoID,ProjectID,LastName,FirstName,MidName,Address")] Child child)
+        public ActionResult Create( Child child)
         {
             try
             {
@@ -88,7 +88,7 @@ namespace CornerStoneApp2.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ChildID,AdvoID,ProjectID,LastName,FirstName,MidName,Address")] Child child)
+        public ActionResult Edit( Child child)
         {
             if (ModelState.IsValid)
             {

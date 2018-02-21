@@ -19,6 +19,9 @@
             @Html.Label("First Name")
         </th>
         <th>
+            @Html.Label("Middle Initial")
+        </th>
+        <th>
             @Html.Label("Last Name")
         </th>
         <th>
@@ -51,6 +54,9 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MiddleIni)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.LastName)
