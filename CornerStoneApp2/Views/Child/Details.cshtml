@@ -11,7 +11,15 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.AdvoID)
+            @Html.Label("Child's ID")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChildID)
+        </dd>
+
+        <dt>
+            @Html.Label("Assigned Advocate(By ID)")
         </dt>
 
         <dd>
@@ -19,23 +27,17 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.ProjectID)
+            @Html.Label("Assigned Project(By ID)")
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.ProjectID)
         </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.LastName)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.LastName)
-        </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.FirstName)
+            @Html.Label("First Name")
         </dt>
 
         <dd>
@@ -43,7 +45,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.MidName)
+            @Html.Label("Middle Initial")
         </dt>
 
         <dd>
@@ -51,11 +53,59 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Address)
+            @Html.Label("Last Name")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.Label("Street Address")
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.Label("City")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.City)
+        </dd>
+
+        <dt>
+            @Html.Label("State")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.State)
+        </dd>
+
+        <dt>
+            @Html.Label("Zip")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Zip)
+        </dd>
+
+        <dt>
+            @Html.Label("Country")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Country)
+        </dd>
+
+        <dt>
+            @Html.Label("Email")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
         </dd>
 
         
