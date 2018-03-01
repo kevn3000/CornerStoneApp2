@@ -23,6 +23,8 @@
         <th>
             @Html.DisplayNameFor(model => model.Address)
         </th>
+        <th>@Html.DisplayNameFor(model => model.Donations)
+        </th>
         <th></th>
     </tr>
 
@@ -39,6 +41,8 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Address)
+        </td>
+        <td>@Html.DisplayFor(modelItem => item.Donations)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.DonorID }) |

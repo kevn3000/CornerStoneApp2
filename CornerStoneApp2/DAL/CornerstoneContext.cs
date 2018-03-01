@@ -16,6 +16,9 @@ namespace CornerStoneApp2.DAL
         public DbSet<Donor> Donors { get; set; }
         public DbSet<Parent> Parents { get; set; }
         public DbSet<Project> Projects { get; set; }
+        public DbSet<Donation> Donations { get; set; }
+        public DbSet<Diagnoses> Diags { get; set; }
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
