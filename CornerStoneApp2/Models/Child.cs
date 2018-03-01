@@ -22,7 +22,8 @@ namespace CornerStoneApp2.Models
 
        
         public virtual ICollection<Parent> Parents { get; set; }
-        
+        public virtual ICollection<Diagnoses> Diags { get; set; }
+
 
     }
 }

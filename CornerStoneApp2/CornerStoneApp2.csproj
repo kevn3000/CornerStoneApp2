@@ -195,6 +195,7 @@
     <Compile Include="Controllers\AdvocateRegisterController.cs" />
     <Compile Include="Controllers\AdvoController.cs" />
     <Compile Include="Controllers\ChildController.cs" />
+    <Compile Include="Controllers\DiagnosesController.cs" />
     <Compile Include="Controllers\DonorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -214,6 +215,7 @@
     <Compile Include="Models\Advo.cs" />
     <Compile Include="Models\Advocate.cs" />
     <Compile Include="Models\Child.cs" />
+    <Compile Include="Models\Diagnoses.cs" />
     <Compile Include="Models\Donor.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -310,6 +312,8 @@
     <Content Include="Views\Project\Details.cshtml" />
     <Content Include="Views\Project\Edit.cshtml" />
     <Content Include="Views\Project\Index.cshtml" />
+    <Content Include="Views\ViewPage1.cshtml" />
+    <Content Include="Views\ViewPage2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
