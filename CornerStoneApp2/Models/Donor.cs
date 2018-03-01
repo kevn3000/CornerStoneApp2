@@ -13,6 +13,7 @@ namespace CornerStoneApp2.Models
         public string MidName { get; set; }
        
         public string Address { get; set; } 
+        public ICollection<Donation>Donations { get; set; }
 
     }
 }

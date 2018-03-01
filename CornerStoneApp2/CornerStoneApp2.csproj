@@ -214,6 +214,7 @@
     <Compile Include="Models\Advo.cs" />
     <Compile Include="Models\Advocate.cs" />
     <Compile Include="Models\Child.cs" />
+    <Compile Include="Models\Donation.cs" />
     <Compile Include="Models\Donor.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />

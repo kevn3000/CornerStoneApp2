@@ -8,9 +8,9 @@ namespace CornerStoneApp2.Models
 {
     public class Donation
     {
-        [Key]
-        public int DonationID;
-        public float Amount;
-        //public int DonorID;
+        //[Key]
+        public int DonationID { get; set; }
+        public float Amount {get; set;}
+        public int DonorID { get; set; }
     }
 }
