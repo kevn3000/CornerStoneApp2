@@ -18,6 +18,8 @@ namespace CornerStoneApp2.DAL
         public DbSet<Project> Projects { get; set; }
         public DbSet<Donation> Donations { get; set; }
         public DbSet<Diagnoses> Diags { get; set; }
+        public DbSet<Client> Clients { get; set; }
+        
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
