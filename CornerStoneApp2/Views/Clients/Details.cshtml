@@ -1,0 +1,282 @@
+﻿@model CornerStoneApp2.Models.Client
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Client</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.dateAdd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateAdd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.parent1First)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.parent1First)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.parent1Last)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.parent1Last)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.parent2First)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.parent2First)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.parent2Last)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.parent2Last)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.relationship)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.relationship)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.studentFirst)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.studentFirst)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.studentLast)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.studentLast)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.studentAge)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.studentAge)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dateOfBirth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateOfBirth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.currentSchool)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.currentSchool)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.county)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.county)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.grade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.grade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.primaryDiagnosis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.primaryDiagnosis)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.streetAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.streetAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.streetAddress2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.streetAddress2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.state)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.state)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.zip)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.zip)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.altEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.altEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.altPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.altPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.referredBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.referredBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.secondaryDiagnosis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.secondaryDiagnosis)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.relatedServices)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.relatedServices)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.outsideServices)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.outsideServices)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.schoolHistory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.schoolHistory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.parentConcerns)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.parentConcerns)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.parentGoals)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.parentGoals)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lastSchoolMeeting)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lastSchoolMeeting)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.meetingType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.meetingType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.notes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.notes)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.clientID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

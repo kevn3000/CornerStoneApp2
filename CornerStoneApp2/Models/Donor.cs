@@ -7,7 +7,7 @@ namespace CornerStoneApp2.Models
 {
     public class Donor
     {
-        public int DonorID { get; set; }
+        public Guid DonorID { get; set; }
         public string LastName { get; set; }
         public string FirstName { get; set; }
         public string MidName { get; set; }

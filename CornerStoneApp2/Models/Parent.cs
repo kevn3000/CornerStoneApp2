@@ -7,7 +7,7 @@ namespace CornerStoneApp2.Models
 {
     public class Parent
     {
-        public int ParentID { get; set; }
+        public Guid ParentID { get; set; }
         public string LastName { get; set; }
         public string FirstName { get; set; }
         public string MidName { get; set; }

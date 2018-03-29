@@ -1,0 +1,67 @@
+﻿@model IEnumerable<CornerStoneApp2.Models.Client>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Parent's First Name
+        </th>
+        <th>
+            Parent's Last Name
+        </th>
+        <th>
+            Student's First Name
+        </th>
+        <th>
+            Student's Last Name
+        </th>
+        <th>
+            Current School
+        </th>
+        <th>
+            County
+        </th>
+        <th>
+           Client Address
+        </th>
+        
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.parent1First)
+
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.parent1Last)
+
+        </td>
+          
+        <td>
+            @Html.DisplayFor(modelItem => item.studentFirst)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.studentLast)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.currentSchool)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.county)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.address)
+        </td>
+        
+    </tr>
+}
+
+</table>

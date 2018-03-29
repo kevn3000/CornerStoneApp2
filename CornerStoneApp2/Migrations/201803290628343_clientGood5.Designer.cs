@@ -7,13 +7,13 @@ namespace CornerStoneApp2.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class Initial : IMigrationMetadata
+    public sealed partial class clientGood5 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Initial));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(clientGood5));
         
         string IMigrationMetadata.Id
         {
-            get { return "201802152341353_Initial"; }
+            get { return "201803290628343_clientGood5"; }
         }
         
         string IMigrationMetadata.Source

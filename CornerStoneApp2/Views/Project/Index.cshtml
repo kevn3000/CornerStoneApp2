@@ -12,26 +12,57 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.AdvoID)
+            Client
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ChildID)
+            Student 
         </th>
-        <th></th>
+        <th>
+            Project Manager
+        </th>
+        <th>
+            Start Date
+        </th>
+        <th>
+            Active
+        </th>
+        <th>
+            Status
+        </th>
+        <th>
+            Total Hours
+        </th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.AdvoID)
+            @Html.DisplayFor(modelItem => item.client.parent1First + item.client.parent1Last)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.ChildID)
+            @Html.DisplayFor(modelItem => item.client.studentFirst + item.client.studentLast)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ProjectID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ProjectID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ProjectID })
+            @Html.DisplayFor(modelItem => item.projectManager.FirstName + item.projectManager.LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.startDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Active)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.totalHours)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.ProjectID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.ProjectID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.ProjectID })
         </td>
     </tr>
 }
