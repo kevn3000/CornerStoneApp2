@@ -195,26 +195,54 @@
     <Compile Include="Controllers\AdvocateRegisterController.cs" />
     <Compile Include="Controllers\AdvoController.cs" />
     <Compile Include="Controllers\ChildController.cs" />
+    <Compile Include="Controllers\ClientsController.cs" />
     <Compile Include="Controllers\DiagnosesController.cs" />
+    <Compile Include="Controllers\DonationsController.cs" />
     <Compile Include="Controllers\DonorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ParentController.cs" />
     <Compile Include="Controllers\ProjectController.cs" />
+    <Compile Include="Controllers\ProjectsController.cs" />
     <Compile Include="DAL\CornerstoneContext.cs" />
     <Compile Include="DAL\CornerstoneInitializer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201802152341353_Initial.cs" />
-    <Compile Include="Migrations\201802152341353_Initial.Designer.cs">
-      <DependentUpon>201802152341353_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\201803290506079_clientGood.cs" />
+    <Compile Include="Migrations\201803290506079_clientGood.Designer.cs">
+      <DependentUpon>201803290506079_clientGood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803290610171_migration2.cs" />
+    <Compile Include="Migrations\201803290610171_migration2.Designer.cs">
+      <DependentUpon>201803290610171_migration2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803290617435_clientGood3.cs" />
+    <Compile Include="Migrations\201803290617435_clientGood3.Designer.cs">
+      <DependentUpon>201803290617435_clientGood3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803290626540_clientGood4.cs" />
+    <Compile Include="Migrations\201803290626540_clientGood4.Designer.cs">
+      <DependentUpon>201803290626540_clientGood4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803290628343_clientGood5.cs" />
+    <Compile Include="Migrations\201803290628343_clientGood5.Designer.cs">
+      <DependentUpon>201803290628343_clientGood5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803290631461_clientGood6.cs" />
+    <Compile Include="Migrations\201803290631461_clientGood6.Designer.cs">
+      <DependentUpon>201803290631461_clientGood6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803292007407_clientGood7.cs" />
+    <Compile Include="Migrations\201803292007407_clientGood7.Designer.cs">
+      <DependentUpon>201803292007407_clientGood7.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Advo.cs" />
     <Compile Include="Models\Advocate.cs" />
     <Compile Include="Models\Child.cs" />
+    <Compile Include="Models\Client.cs" />
     <Compile Include="Models\Diagnoses.cs" />
     <Compile Include="Models\Donation.cs" />
     <Compile Include="Models\Donor.cs" />
@@ -315,6 +343,21 @@
     <Content Include="Views\Project\Index.cshtml" />
     <Content Include="Views\ViewPage1.cshtml" />
     <Content Include="Views\ViewPage2.cshtml" />
+    <Content Include="Views\Clients\Create.cshtml" />
+    <Content Include="Views\Clients\Delete.cshtml" />
+    <Content Include="Views\Clients\Details.cshtml" />
+    <Content Include="Views\Clients\Edit.cshtml" />
+    <Content Include="Views\Clients\Index.cshtml" />
+    <Content Include="Views\Projects\Create.cshtml" />
+    <Content Include="Views\Projects\Delete.cshtml" />
+    <Content Include="Views\Projects\Details.cshtml" />
+    <Content Include="Views\Projects\Edit.cshtml" />
+    <Content Include="Views\Projects\Index.cshtml" />
+    <Content Include="Views\Donations\Create.cshtml" />
+    <Content Include="Views\Donations\Delete.cshtml" />
+    <Content Include="Views\Donations\Details.cshtml" />
+    <Content Include="Views\Donations\Edit.cshtml" />
+    <Content Include="Views\Donations\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -335,8 +378,26 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201802152341353_Initial.resx">
-      <DependentUpon>201802152341353_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201803290506079_clientGood.resx">
+      <DependentUpon>201803290506079_clientGood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803290610171_migration2.resx">
+      <DependentUpon>201803290610171_migration2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803290617435_clientGood3.resx">
+      <DependentUpon>201803290617435_clientGood3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803290626540_clientGood4.resx">
+      <DependentUpon>201803290626540_clientGood4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803290628343_clientGood5.resx">
+      <DependentUpon>201803290628343_clientGood5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803290631461_clientGood6.resx">
+      <DependentUpon>201803290631461_clientGood6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803292007407_clientGood7.resx">
+      <DependentUpon>201803292007407_clientGood7.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

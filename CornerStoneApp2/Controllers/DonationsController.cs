@@ -11,115 +11,108 @@ using CornerStoneApp2.Models;
 
 namespace CornerStoneApp2.Controllers
 {
-    public class AdvoController : Controller
+    public class DonationsController : Controller
     {
         private CornerstoneContext db = new CornerstoneContext();
 
-        // GET: Advo
+        // GET: Donations
         public ActionResult Index()
         {
-            return View(db.Advocates.ToList());
+            return View(db.Donations.ToList());
         }
 
-        // GET: Advo/Details/5
+        // GET: Donations/Details/5
         public ActionResult Details(Guid? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Advo advo = db.Advocates.Find(id);
-            if (advo == null)
+            Donation donation = db.Donations.Find(id);
+            if (donation == null)
             {
                 return HttpNotFound();
             }
-            return View(advo);
+            return View(donation);
         }
 
-        // GET: Advo/Create
+        // GET: Donations/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Advo/Create
+        // POST: Donations/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Advo advo)
+        public ActionResult Create([Bind(Include = "DonationID,Amount,donorFirst,donorLast,donorZip")] Donation donation)
         {
-            try
+            if (ModelState.IsValid)
             {
-                if (ModelState.IsValid)
-                {
-                    db.Advocates.Add(advo);
-                    db.SaveChanges();
-                    return RedirectToAction("Index");
-                }
+                donation.DonationID = Guid.NewGuid();
+                db.Donations.Add(donation);
+                db.SaveChanges();
+                return RedirectToAction("Index");
             }
-            catch (DataException /* dex */)
-            {
-                //Log the error (uncomment dex variable name and add a line here to write a log.
-                ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists see your system administrator");
 
-            }
-            return View(advo);
+            return View(donation);
         }
 
-        // GET: Advo/Edit/5
+        // GET: Donations/Edit/5
         public ActionResult Edit(Guid? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Advo advo = db.Advocates.Find(id);
-            if (advo == null)
+            Donation donation = db.Donations.Find(id);
+            if (donation == null)
             {
                 return HttpNotFound();
             }
-            return View(advo);
+            return View(donation);
         }
 
-        // POST: Advo/Edit/5
+        // POST: Donations/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(Advo advo)
+        public ActionResult Edit([Bind(Include = "DonationID,Amount,donorFirst,donorLast,donorZip")] Donation donation)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(advo).State = EntityState.Modified;
+                db.Entry(donation).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(advo);
+            return View(donation);
         }
 
-        // GET: Advo/Delete/5
+        // GET: Donations/Delete/5
         public ActionResult Delete(Guid? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Advo advo = db.Advocates.Find(id);
-            if (advo == null)
+            Donation donation = db.Donations.Find(id);
+            if (donation == null)
             {
                 return HttpNotFound();
             }
-            return View(advo);
+            return View(donation);
         }
 
-        // POST: Advo/Delete/5
+        // POST: Donations/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(Guid id)
         {
-            Advo advo = db.Advocates.Find(id);
-            db.Advocates.Remove(advo);
+            Donation donation = db.Donations.Find(id);
+            db.Donations.Remove(donation);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

@@ -44,7 +44,7 @@
             @Html.DisplayFor(modelItem => item.parent1Last)
 
         </td>
-          
+
         <td>
             @Html.DisplayFor(modelItem => item.studentFirst)
         </td>
@@ -60,7 +60,12 @@
         <td>
             @Html.DisplayFor(modelItem => item.address)
         </td>
-        
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.clientID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.clientID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.clientID })
+        </td>
+
     </tr>
 }
 

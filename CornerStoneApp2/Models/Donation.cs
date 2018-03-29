@@ -10,7 +10,10 @@ namespace CornerStoneApp2.Models
     {
         //[Key]
         public Guid DonationID { get; set; }
-        public float Amount {get; set;}
-        public int DonorID { get; set; }
+        public float Amount { get; set; }
+        public string donorFirst{get; set;}
+        public string donorLast { get; set; }
+        public string donorZip { get; set; }
+
     }
 }
