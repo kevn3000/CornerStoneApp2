@@ -10,7 +10,8 @@ namespace CornerStoneApp2.Models
         public Guid ProjectID { get; set; }
        
         // [DisplayName("Project Manager")]
-        public Advo projectManager { get; set; }
+        public Guid AdvoID { get; set; }
+        public Guid ChildID { get; set; }
         public DateTime startDate { get; set; }
         public Client client { get; set; }
         public string studentName { get; set; }

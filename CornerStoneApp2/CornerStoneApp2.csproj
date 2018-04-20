@@ -237,6 +237,14 @@
     <Compile Include="Migrations\201803292007407_clientGood7.Designer.cs">
       <DependentUpon>201803292007407_clientGood7.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804200608207_add-migration 42018.cs" />
+    <Compile Include="Migrations\201804200608207_add-migration 42018.Designer.cs">
+      <DependentUpon>201804200608207_add-migration 42018.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804200611259_42018a.cs" />
+    <Compile Include="Migrations\201804200611259_42018a.Designer.cs">
+      <DependentUpon>201804200611259_42018a.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Advo.cs" />
@@ -398,6 +406,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803292007407_clientGood7.resx">
       <DependentUpon>201803292007407_clientGood7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804200608207_add-migration 42018.resx">
+      <DependentUpon>201804200608207_add-migration 42018.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804200611259_42018a.resx">
+      <DependentUpon>201804200611259_42018a.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

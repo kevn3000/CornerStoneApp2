@@ -6,8 +6,12 @@ using System.Web;
 namespace CornerStoneApp2.Models
 {
     public class Advo
+
     {
+
         public Guid AdvoID { get; set; }
+
+        
         public string FirstName { get; set; }
         public string MiddleIni { get; set; }
         public string LastName { get; set; }

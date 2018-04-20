@@ -18,7 +18,7 @@ namespace CornerStoneApp2.Controllers
         // GET: Advo
         public ActionResult Index()
         {
-            return View(db.Advocates.ToList());
+            return View(db.Advos.ToList());
         }
 
         // GET: Advo/Details/5
@@ -28,7 +28,7 @@ namespace CornerStoneApp2.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Advo advo = db.Advocates.Find(id);
+            Advo advo = db.Advos.Find(id);
             if (advo == null)
             {
                 return HttpNotFound();
@@ -53,7 +53,8 @@ namespace CornerStoneApp2.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    db.Advocates.Add(advo);
+                    advo.AdvoID = Guid.NewGuid();
+                    db.Advos.Add(advo);
                     db.SaveChanges();
                     return RedirectToAction("Index");
                 }
@@ -74,7 +75,7 @@ namespace CornerStoneApp2.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Advo advo = db.Advocates.Find(id);
+            Advo advo = db.Advos.Find(id);
             if (advo == null)
             {
                 return HttpNotFound();
@@ -105,7 +106,7 @@ namespace CornerStoneApp2.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Advo advo = db.Advocates.Find(id);
+            Advo advo = db.Advos.Find(id);
             if (advo == null)
             {
                 return HttpNotFound();
@@ -118,8 +119,8 @@ namespace CornerStoneApp2.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(Guid id)
         {
-            Advo advo = db.Advocates.Find(id);
-            db.Advocates.Remove(advo);
+            Advo advo = db.Advos.Find(id);
+            db.Advos.Remove(advo);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

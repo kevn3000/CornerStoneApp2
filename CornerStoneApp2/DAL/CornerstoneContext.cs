@@ -12,7 +12,7 @@ namespace CornerStoneApp2.DAL
         }
 
         public DbSet <Child> Children { get; set; }
-        public DbSet<Advo> Advocates { get; set; }
+        public DbSet<Advo> Advos { get; set; }
         public DbSet<Donor> Donors { get; set; }
         public DbSet<Parent> Parents { get; set; }
         public DbSet<Project> Projects { get; set; }
